@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+
+<meta name="author" content="ElHodor"/>
+<meta name="language" content="de"/>
+
+<category>
+<pattern>TEST</pattern>
+<template>
+<random>
+  <li><srai>F1</srai></li>
+  <li><srai>F2</srai></li>
+  <li><srai>F3</srai></li>
+  <li><srai>F4</srai></li>
+  <li><srai>F5</srai></li>
+  <li><srai>F6</srai></li>
+  <li><srai>F7</srai></li>
+  <li><srai>F8</srai></li>
+  <li><srai>F9</srai></li>
+  <li><srai>F10</srai></li>
+  <li><srai>F11</srai></li>
+  <li><srai>F12</srai></li>
+  <li><srai>F13</srai></li>
+  <li><srai>F14</srai></li>
+  <li><srai>F15</srai></li>
+</random>
+</template>
+</category> 
+
+<category>
+<pattern>RESULT</pattern>
+<template>
+  <get name="result"/>
+</template>
+</category> 
+
+<category>
+<pattern>F1</pattern>
+<template>
+Bist du ein neugieriger Mensch?
+<think><set name="topic">F1</set></think>
+</template>
+</category> 
+ 
+<topic name = "F1">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="openness">1</set></think>
+Cool. Ich auch.
+</template>
+</category> 
+</topic>
+
+ 
+<topic name = "F1">
+<category>
+<pattern>NEIN</pattern>
+<template>
+<think><set name="">1</set></think>
+Schade. Ich finde eigentlich alles spannend.
+</template>
+</category> 
+</topic>
+
+<!--Frage 2 -->
+<category>
+<pattern>F2</pattern>
+<template>
+  Hast du viele Ideen und viel Fantasie?
+<think><set name="topic">F2</set></think>
+</template>
+</category>
+
+
+<topic name = "F2">
+<category>
+<pattern>JA</pattern>
+<think><set name="openness">1</set></think>
+<template>Du bist also kreativ</template>
+</category>
+</topic>
+
+<topic name = "F2">
+<category>
+<pattern>NEIN</pattern>
+<template>In Ordnung</template>
+</category>
+</topic>
+
+<!--Frage 3 -->
+<category>
+<pattern>F3</pattern>
+<template>
+Lernst du immer wieder gerne neue Dinge?
+<think><set name="topic">F3</set></think>
+</template>
+</category> 
+
+<topic name = "F3">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="openness">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F3">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+<!--Frage 4 -->
+
+<category>
+<pattern>F4</pattern>
+<template>
+Bist du sehr Pflichtbewusst?
+<think><set name="topic">F4</set></think>
+</template>
+</category> 
+
+
+
+<topic name = "F4">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="conscientiousness">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F4">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+
+<!--Frage 5 -->
+<category>
+<pattern>F5</pattern>
+<template>
+Erledigst du deine Aufgaben immer sehr ordentlich?
+<think><set name="topic">F5</set></think>
+</template>
+</category> 
+
+
+<topic name = "F5">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="conscientiousness">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F5">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+<!--Frage 6 -->
+<category>
+<pattern>F6</pattern>
+<template>
+Achtest du sehr darauf, ob Regeln eingehalten werden?
+<think><set name="topic">F6</set></think>
+</template>
+</category> 
+
+<topic name = "F6">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="conscientiousness">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F6">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+<!--Frage 7 -->
+<category>
+<pattern>F7</pattern>
+<template>
+Bist du gern mit anderen Menschen zusammen?
+<think><set name="topic">F7</set></think>
+</template>
+</category> 
+
+<topic name = "F7">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="extraversion">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F7">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+<!--Frage 8 -->
+<category>
+<pattern>F8</pattern>
+<template>
+Bist du unternehmungslustig?
+<think><set name="topic">F8</set></think>
+</template>
+</category> 
+
+<topic name = "F8">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="extraversion">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F8">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+<!--Frage 9 -->
+<category>
+<pattern>F9</pattern>
+<template>
+Bist du ein Gesprächiger und Kommunikativer Mensch?
+<think><set name="topic">F9</set></think>
+</template>
+</category> 
+
+<topic name = "F9">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="extraversion">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F9">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+<!--Frage 10 -->
+<category>
+<pattern>F10</pattern>
+<template>
+Bist du ein höflicher Mensch?
+<think><set name="topic">F10</set></think>
+</template>
+</category> 
+
+<topic name = "F10">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="agreeableness">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F10">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+<!--Frage 11 -->
+<category>
+<pattern>F11</pattern>
+<template>
+Kommst du gut mit Menschen zurecht, auch wenn sie mal anderer Meinung sind?
+<think><set name="topic">F11</set></think>
+</template>
+</category> 
+
+<topic name = "F11">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="agreeableness">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F11">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+<!--Frage 12 -->
+<category>
+<pattern>F12</pattern>
+<template>
+Achtest du darauf immer freundlich zu sein?
+<think><set name="topic">F12</set></think>
+</template>
+</category> 
+
+<topic name = "F12">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="agreeableness">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F12">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+<!--Frage 13 -->
+<category>
+<pattern>F13</pattern>
+<template>
+Grübelst du viel über deine Zukunft nach?
+<think><set name="topic">F13</set></think>
+</template>
+</category> 
+
+<topic name = "F13">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="neuroticism">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F13">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+<!--Frage 14 -->
+<category>
+<pattern>F14</pattern>
+<template>
+Bist du oft von deinen Gefühlen hin und her gerissen?
+<think><set name="topic">F14</set></think>
+</template>
+</category> 
+
+<topic name = "F14">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="neuroticism">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F14">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+<!--Frage 15 -->
+<category>
+<pattern>F15</pattern>
+<template>
+Bist du ein ängstlicher Typ?
+<think><set name="topic">F15</set></think>
+</template>
+</category> 
+
+<topic name = "F15">
+<category>
+<pattern>JA</pattern>
+<template>
+<think><set name="neuroticism">1</set></think>
+ </template>
+</category>
+</topic>
+
+<topic name = "F15">
+<category>
+<pattern>NEIN</pattern>
+ <template>
+ </template>
+</category>
+</topic>
+
+</aiml>

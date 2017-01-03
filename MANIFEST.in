@@ -1,0 +1,4 @@
+include *.txt
+include *.rst
+graft aiml
+prune sets

@@ -22,6 +22,7 @@ from . import __version__
 
 import numpy as np
 from . import big5
+import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -171,6 +172,18 @@ class Kernel():
                     float(self._sessions[session_id].get("openness",0)),
                     float(self._sessions[session_id].get("agreeableness",0)),
                     float(self._sessions[session_id].get("conscientiousness",0))])
+        elif name == "tageszeit":
+            h = datetime.datetime.now().time().hour
+            if h < 12:
+                return "Morgen"
+            elif h >= 12 and h <= 18:
+                return "Tag"
+            elif h > 18:
+                return "Abend"
+        elif name == "zeit":
+            h = datetime.datetime.now().time().hour
+            m = datetime.datetime.now().time().minute
+            return str(h) + ":" + str(m)
         else:
             try:
                 return self._sessions[session_id][name]

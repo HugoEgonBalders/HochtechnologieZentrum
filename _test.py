@@ -41,6 +41,6 @@ while not brain_loaded:
         #    force_reload = True
 
 # Enter the main input/output loop.
-print("\nHallo. Ich bin hier um dich bei der Wahl deines Studiums zu unterstützen. Hast du irgendwelche Fragen?")
+print(kern.respond("start"))
 while True:
     print(kern.respond(input("> ")))

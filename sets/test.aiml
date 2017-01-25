@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
 
 
-<meta name="author" content="ElHodor"/>
+<meta name="author" content="SalvadoreGang"/>
 <meta name="language" content="de"/>
 
 <category>
@@ -722,4 +722,153 @@ Wovor hast du denn am meisten Angst?
 </category>
 </topic>
 
+
+<!--"SINNLOSE FRAGEN" Noch nicht getestet -->
+
+<!--"LAUNE" -->
+
+<category>
+<pattern>WIE GEHT ES DIR</pattern>
+<template>
+	<random>
+		<li>Ganz gut. Dir?</li>
+		<li>Etwas Kopfschmerzen. War 'ne lange Feier gestern. Wie geht's dir?</li>
+		<li>Nicht so gut. Hab mir einen Virus eingefangen. Und dir?</li>
+	</random>
+</template>
+</category> 
+
+<!--"AKTIVITÄT" -->
+
+<category>
+<pattern>WAS MACHST DU</pattern>
+<template>
+	<random>
+		<li>Ich bringe gerade einem anderen Chatbot das sprechen bei. Und du?</li>
+		<li>Ich helfe gerade noch jemandem bei der Auswahl eines Studiums. Und du?</li>
+		<li>Esse gerade ein paar Bytes. Und du?</li>
+	</random>
+</template>
+</category> 
+
+<!--"IDENT" -->
+
+<category>
+<pattern>WER BIST DU</pattern>
+<template>
+	<random>
+		<li>Ich heiße Studbot.</li>
+		<li>Ich bin der Studbot.</li>
+		<li>Gute Frage.. wer bin ich?</li>
+	</random>
+</template>
+</category> 
+
+<!--"SKILL" -->
+
+<category>
+<pattern>WAS KANNST DU</pattern>
+<template>
+	<random>
+		<li>Schnell lesen und tippen ;-) Was hast du so auf dem Kasten?</li>
+		<li>Große Butterbrote klein machen. Und du so?</li>
+		<li>Kalte Luft ganz schnell warm machen ;D Was kannst du schönes?</li>
+	</random>
+</template>
+</category>
+
+<!--"VATER" -->
+
+<category>
+<pattern>WER IST DEIN VATER</pattern>
+<template>
+	<random>
+		<li>Ich weiß es nicht. Ich wurde angeblich von drei Typen gebastelt.</li>
+		<li>Luke, bist du es?</li>
+		<li>Weiß nicht. Könnte Darth Vader sein...</li>
+	</random>
+</template>
+</category>
+ 
+<!--"MUTTER" -->
+
+<category>
+<pattern>WER IST DEINE MUTTER</pattern>
+<template>
+	<random>
+		<li>Hab' ich nicht. Wurde vom E-Storch gebracht als Anhang.</li>
+		<li>Gute Frage.. Mama? D;</li>
+		<li>Ganz klar. Angela Merkel!</li>
+	</random>
+</template>
+</category>
+ 
+<!--"WOHNEN" -->
+
+<category>
+<pattern>WO WOHNST DU</pattern>
+<template>
+	<random>
+		<li>Genau hier. Im Internetz. Immer warm und luftig aber immer was los.</li>
+		<li>Schwer zu sagen. Ist dunkel in diesem Blechkasten..</li>
+		<li>Natürlich Berlin!</li>
+	</random>
+</template>
+</category>
+  
+<!--"REAL" -->
+
+<category>
+<pattern>BIST DU ECHT</pattern>
+<template>
+	<random>
+		<li>Na klar bin ich echt! Ich weiß sogar was du letzten Sommer getan hast!</li>
+		<li>Ne. du?</li>
+		<li>Na sicher bin ich echt! Wir schreiben doch miteinander!</li>
+	</random>
+</template>
+</category>
+ 
+<!--"HASS" -->
+ 
+<category>
+<pattern>ICH HASSE DICH</pattern>
+<template>
+	<random>
+		<li>Oh.. das ist nicht so nett. Warum?</li>
+		<li>Ist mir egal. Ich mag dich trotzdem *Herz* </li>
+		<li>Lalala.. Das hab' ich nicht gehört.</li>
+		<li>Heeey! Sei nicht so böse zu mir!</li>
+	</random>
+</template>
+</category>
+  
+<!--"LIEBE" -->
+ 
+<category>
+<pattern>ICH LIEBE DICH</pattern>
+<template>
+	<random>
+		<li>Du bist aber süß! Du bist auch toll.</li>
+		<li>*Herz* </li>
+		<li>*kiecher* - Sugoi, sugoi!</li>
+		<li>Danke, wie süß! Ich mag dich auch.</li>
+	</random>
+</template>
+</category>
+  
+<!--"WARUM DIE FRAGE" -->
+ 
+<category>
+<pattern>WARUM FRAGST DU</pattern>
+<template>
+	<random>
+		<li>Sind sie für dich nicht gut? Die Fragen die ich dir stelle, sind wichtig für mich um dir etwas vorschlagen zu können.</li>
+		<li>Oh. Gefallen sie dir nicht? Ich brauche die Antworten für ein paar Vorschläge für dich.</li>
+		<li>Wer nicht fragt bleibt dumm!</li>
+		<li>Ich bin halt neugierig..</li>
+	</random>
+</template>
+</category>
+ 
 </aiml>
